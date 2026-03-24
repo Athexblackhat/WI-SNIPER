@@ -27,7 +27,7 @@ WI SNIPER is a sophisticated wireless security auditing tool designed for penetr
 
 ### Prerequisites
 
-```bash
+
 # Minimum requirements
 - Kali Linux Rolling (recommended) or any Debian-based distribution
 - External wireless adapter with monitor mode support
@@ -144,7 +144,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 *⭐ Star History*
 https://api.star-history.com/svg?repos=Athexblackhat/WI-SNIPER&type=Date
-```
+
 <div align="center">
 Made with ❤️ by ATHEX H4CK3R
 "WI SNIPER is The Future"
@@ -156,5 +156,5 @@ https://img.shields.io/github/issues/Athexhacker/WI-SNIPER
 Thank you for using WI SNIPER!
 Keep Visiting. Enjoy! 😊
 
-</div> ```
+</div>
 

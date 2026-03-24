@@ -1,37 +1,160 @@
-# WI SNIPER by ATHEX H4CK3R
+# 🎯 WI SNIPER - Advanced Wireless Security Testing Framework
+
+[![Version](https://img.shields.io/badge/version-3.0-blue.svg)](https://github.com/Athexhacker/WI-SNIPER)
+[![Kali Compatible](https://img.shields.io/badge/Kali-Linux%20Rolling-green.svg)](https://www.kali.org)
+[![License](https://img.shields.io/badge/license-MIT-red.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.x-yellow.svg)](https://www.python.org)
+[![Bash](https://img.shields.io/badge/bash-5.0+-orange.svg)](https://www.gnu.org/software/bash/)
+
+> **"WI SNIPER is the Future of MITM WPA Attacks"** - Advanced wireless security testing for the modern era
+
+## 📋 Overview
+
+WI SNIPER is a sophisticated wireless security auditing tool designed for penetration testers and security professionals. It specializes in WPA/WPA2 security assessment through advanced MITM (Man-in-The-Middle) techniques, rogue access point deployment, and credential harvesting. Built with stability and functionality in mind, it provides a comprehensive framework for testing wireless network security.
+
+### 🎯 Key Features
+
+- **Automated Handshake Capture** - Smart detection and capture of WPA/WPA2 handshakes
+- **Rogue Access Point** - Creates convincing fake access points mimicking target networks
+- **Advanced Deauthentication** - Multiple methods including aireplay-ng and mdk3
+- **Captive Portal** - Professional phishing pages with 40+ language support
+- **Credential Validation** - Real-time password verification against captured handshakes
+- **Multi-language Support** - 40+ languages including brand-specific templates
+- **Headless Mode** - Run without GUI for automated deployments
+- **Detailed Logging** - Comprehensive audit trails for all activities
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+```bash
+# Minimum requirements
+- Kali Linux Rolling (recommended) or any Debian-based distribution
+- External wireless adapter with monitor mode support
+- 2GB RAM minimum
+- 10GB free disk space
+- Root access
 
 
-"WI SNIPER is the Future of MITM WPA Attacks" It is made by athex with less bugs and more functionality. It's compatible with the latest release of Kali (rolling). The attack is mostly manual, but experimental versions will automatically handle most functionality from the stable releases.
 
-## How It Works :
+## 🔧 How It Works
+WI SNIPER employs a sophisticated multi-stage attack methodology:
 
-* Scan the networks.
-* Capture a handshake (can't be used without a valid handshake, it's necessary to verify the password)
-* Use WEB Interface
-* Launch a FakeAP instance to imitate the original access point
-* Spawns a MDK3 process, which deauthenticates all users connected to the target network, so they can be lured to connect to the FakeAP and enter the WPA password.
-* A fake DNS server is launched in order to capture all DNS requests and redirect them to the host running the script
-* A captive portal is launched in order to serve a page, which prompts the user to enter their WPA password
-* Each submitted password is verified by the handshake captured earlier
-* The attack will automatically terminate, as soon as a correct password is submitted..
+1. Reconnaissance Phase
+Network scanning and enumeration
 
-## Changelog :
-WI SNIPER gets weekly updates with new features, improvements and bugfixes.
+Client detection and analysis
+
+Signal strength monitoring
+
+Vendor identification via OUI lookup
+
+2. Handshake Capture
+Passive monitoring of target network
+
+Active deauthentication to force reconnections
+
+Handshake verification using aircrack-ng/pyrit
+
+Automatic handshake storage and management
+
+3. Rogue Access Point Deployment
+Creates identical SSID to target network
+
+Spoofs target MAC address
+
+Configures proper channel and encryption
+
+Sets up DHCP server for client management
+
+4. Captive Portal
+Serves convincing login pages
+
+Supports 40+ languages and router brands
+
+SSL certificate generation for HTTPS
+
+DNS spoofing to redirect all traffic
+
+5. Credential Harvesting
+Captures submitted passwords
+
+Real-time validation against handshake
+
+Automatic storage with metadata
+
+Success notification and cleanup
 
 
-## Requirements :
-A Linux-based operating system. We recommend Kali Linux 2 or Kali 2016.1 rolling. Kali 2 & 2016 support the latest aircrack-ng versions. An external wifi card is recommended.
+## 📊 Attack Flow Diagram
+```
+[Network Scan] → [Handshake Capture] → [Rogue AP Setup]
+       ↓                 ↓                    ↓
+[Client Detection] → [Deauth Attack] → [Captive Portal]
+       ↓                 ↓                    ↓
+[Credential Capture] → [Validation] → [Success Reporting]
+```
 
-## Disclaimer :
+## 🛠️ Advanced Features
+Headless Mode
 
-WI SNIPER is intended to be used for legal security purposes only, and you should only use it to protect networks/hosts you own or have permission to test. Any other use is not the responsibility of the developer(s).  Be sure that you understand and are complying with the  licenses and laws in your area.  In other words, don't be stupid, don't be an asshole, and use this tool responsibly and legally.
+*Run completely automated without GUI*
 
+```
+FLUX_AUTO=1 KEEP_NETWORK=0 ./wisniper.sh
 
+```
+Debug Mode
+# Detailed output for troubleshooting
+```
+FLUX_DEBUG=1 ./wisniper.sh
+```
 
-Thats It... If You Like This Repo. Please Share This With Your Friends..
+## 🔄 Changelog
+Version 3.0 (Current)
+Complete code rewrite with improved stability
 
- Don't Forget To SUBSCRIBE My [YouTube](https://www.youtube.com/@inziXploit444)) Channel..!!!
+Added headless mode support
 
-***Thankyou.***
-***Keep Visiting..***
-***Enjoy.!!! :)***
+Enhanced error handling and logging
+
+Improved handshake detection
+
+Added 15+ new phishing templates
+
+Better dependency management
+
+Automatic cleanup on exit
+
+Real-time credential validation
+
+Enhanced UI with progress indicators
+
+Version 2.x
+Initial release with core functionality
+
+Basic handshake capture
+
+Rogue AP deployment
+
+Captive portal support
+
+## 📄 License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+*⭐ Star History*
+https://api.star-history.com/svg?repos=Athexblackhat/WI-SNIPER&type=Date
+```
+<div align="center">
+Made with ❤️ by ATHEX H4CK3R
+"WI SNIPER is The Future"
+
+https://img.shields.io/github/stars/Athexhacker/WI-SNIPER
+https://img.shields.io/github/forks/Athexhacker/WI-SNIPER
+https://img.shields.io/github/issues/Athexhacker/WI-SNIPER
+
+Thank you for using WI SNIPER!
+Keep Visiting. Enjoy! 😊
+
+</div> ```
+

@@ -142,19 +142,11 @@ Captive portal support
 ## 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-*⭐ Star History*
-https://api.star-history.com/svg?repos=Athexblackhat/WI-SNIPER&type=Date
 
-<div align="center">
-Made with ❤️ by ATHEX H4CK3R
-"WI SNIPER is The Future"
+### Made with ❤️ by ATHEX H4CK3R
+***"WI SNIPER is The Future"***
 
-https://img.shields.io/github/stars/Athexhacker/WI-SNIPER
-https://img.shields.io/github/forks/Athexhacker/WI-SNIPER
-https://img.shields.io/github/issues/Athexhacker/WI-SNIPER
+# Thank you for using WI SNIPER!
+*Keep Visiting. Enjoy! 😊*
 
-Thank you for using WI SNIPER!
-Keep Visiting. Enjoy! 😊
-
-</div>
 
